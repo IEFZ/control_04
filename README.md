@@ -32,8 +32,14 @@ Para la implementación en forma paralela (openmp)
 donde datos.txt puede ser cualquier archivo txt con otro nombre que este colocado en la carpeta correspondiente
 
 
-Nota: Si se desea comprobar si se estan usando los procesadores en forma paralela instale y ejecute lo siguiente en una nueva terminal
+Nota 
+
+Si se desea comprobar si se estan usando los procesadores en forma paralela instale y ejecute lo siguiente en una nueva terminal
 
 ```$ sudo apt install htop```
 
 ```$ htop```
+
+Si se desea saber el tiempo de ejecución de la salida de los datos, anteponga time cuando se realiza el ./dist/programa, por ejemplo
+
+```$ time ./dist/programa -f datos.txt -o salida.txt```
